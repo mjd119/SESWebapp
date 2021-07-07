@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome</title>
+</head>
+<body>
+    <p>
+        Hello
+        {% for user in users %}
+        {{ user['first_name'] }}
+        {% endfor %}
+    </p>
+    <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <div id ='root'></div>
+    <script type="text/babel" src="/static/UserForm.js"></script> <!-- Keep type as text/babel -->
+<!--    <script type="text/jsx">-->
+<!--        import React from 'react';-->
+<!--        import ReactDOM from 'react-dom';-->
+<!--        require('/static/UserForm.js');-->
+<!--        ReactDOM.render(<UserForm />, document.getElementById('root'));-->
+<!--    </script>-->
+<!--    <script type="text/jsx">-->
+<!--        ReactDOM.render(<UserForm />, document.getElementById('root'));-->
+<!--    </script>-->
+</body>
+</html>
